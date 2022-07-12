@@ -2,6 +2,7 @@ import os
 import datetime
 
 """ Authored by Charles Truscott Watters. Thank you Massachusetts Institute of Technology"""
+""" Thank you John Guttag, Eric Grimson and Ana Bell and MIT staff and edX staff """
 """ Silly string for Mathematics research
 Sum: 20 (10 + 10) Difference: 0 ( 10 minus 10 )
 Product: 100 (10 x 10) Reciprocal: 1 (10 / 10)
@@ -699,17 +700,21 @@ def main():
         for b in q:
             for c in r:
                 for d in s:
-                    if type(a) == list and type(b) == list and type(c) == list and type(d) == list and a[3] > 10 and b[3] > 10 and c[3] > 10 and d[3] > 10:
-                        #print("all list: {} {} {} {}".format(a, b, c, d))
-                        if a[3] == b[3]:
+                    print(a, b, c, d)
+                    if type(a) == list and type(b):
+                        if a[3] == b[3] and a[3] > 5 and a[0] is not "Sum" and b[0] is not "Difference":
                             print("{} equals {} which is the {} of {} and {} and the {} of {} and {}".format(a[3], b[3], a[0], a[1], a[2], b[0], b[1], b[2]))
-                        if a[3] == c[3]:
+                    if type(c) == list and type(a) == list:
+                        if a[3] == c[3] and a[3] > 5 and a[0] is not "Sum" and c[0] is not "Difference":
                             print("{} equals {} which is the {} of {} and {} and the {} of {} and {}".format(a[3], c[3], a[0], a[1], a[2], c[0], c[1], c[2]))
-                        if a[3] == d[3]:
+                    if type(a) == list and type(d) == list:
+                        if a[3] == d[3] and a[3] > 5 and a[0] is not "Sum" and d[0] is not "Difference":
                             print("{} equals {} which is the {} of {} and {} and the {} of {} and {}".format(a[3], d[3], a[0], a[1], a[2], d[0], d[1], d[2]))
-                        if b[3] == c[3]:
+                    if type(b) == list and type(c) == list:
+                        if b[3] == c[3] and b[3] > 5 and b[0] is not "Sum" and c[0] is not "Difference":
                             print("{} equals {} which is the {} of {} and {} and the {} of {} and {}".format(b[3], c[3], b[0], b[1], b[2], c[0], c[1], c[2]))
-                        if b[3] == d[3]:
+                    if type(b) == list and type(d) == list:
+                        if b[3] == d[3] and b[3] > 5 and b[0] is not "Sum" and c[0] is not "Difference":
                             print("{} equals {} which is the {} of {} and {} and the {} of {} and {}".format(b[3], d[3], b[0], b[1], b[2], d[0], d[1], d[2]))
 
     # Mathematical Proofs in Python hopefully
